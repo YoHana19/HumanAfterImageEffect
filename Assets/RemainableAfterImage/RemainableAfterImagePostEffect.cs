@@ -162,7 +162,7 @@ public class RemainableAfterImagePostEffect : MonoBehaviour
 
     private Vector3 GetMeshScale()
     {
-        // Calculate mesh height that can be seen as same size as screen in the point of the anchor 
+        // Calculate mesh height that can be seen as same size as screen at the point of the anchor
         var pointTop = _camera.ScreenToWorldPoint(new Vector3(0, 0, DISTANCE_FROM_CAMERA));
         var pointBottom = _camera.ScreenToWorldPoint(new Vector3(0, _camera.pixelHeight, DISTANCE_FROM_CAMERA));
         var frustumHeight = Vector3.Distance(pointTop, pointBottom);
@@ -207,17 +207,17 @@ public class RemainableAfterImagePostEffect : MonoBehaviour
         }
     }
 
-    private float CalculateUVMultiplierLandScape(Texture2D cameraTexture)
+    private float CalculateUVMultiplierLandScape(Texture textureFromAROcclusionManager)
     {
         float screenAspect = (float) Screen.width / Screen.height;
-        float cameraTextureAspect = (float) cameraTexture.width / cameraTexture.height;
+        float cameraTextureAspect = (float) textureFromAROcclusionManager.width / textureFromAROcclusionManager.height;
         return screenAspect / cameraTextureAspect;
     }
 
-    private float CalculateUVMultiplierPortrait(Texture2D cameraTexture)
+    private float CalculateUVMultiplierPortrait(Texture textureFromAROcclusionManager)
     {
         float screenAspect = (float) Screen.height / Screen.width;
-        float cameraTextureAspect = (float) cameraTexture.width / cameraTexture.height;
+        float cameraTextureAspect = (float) textureFromAROcclusionManager.width / textureFromAROcclusionManager.height;
         return screenAspect / cameraTextureAspect;
     }
 
