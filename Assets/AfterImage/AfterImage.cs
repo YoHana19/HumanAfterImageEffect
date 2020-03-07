@@ -2,7 +2,6 @@
 
 public class AfterImage
 {
-    private readonly RenderTexture _screenImage;
     private readonly Camera _camera;
     private readonly Material _material;
 

@@ -32,7 +32,6 @@
             sampler2D _MainTex;
             sampler2D _StencilTex;
             sampler2D _CameraFeedTexture;
-            float2 _Offset;
             float _UVMultiplierLandScape;
             float _UVMultiplierPortrait;
             float _UVFlip;

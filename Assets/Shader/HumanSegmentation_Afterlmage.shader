@@ -27,7 +27,6 @@
             
             sampler2D _MainTex;
             sampler2D _StencilTex;
-            float2 _Offset;
             float _UVMultiplierLandScape;
             float _UVMultiplierPortrait;
             float _UVFlip;
