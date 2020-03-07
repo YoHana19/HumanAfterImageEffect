@@ -18,7 +18,7 @@ I also explain the codes in these blogs. (Japanese Only)
 
 ### Enviroment the code tested
 - Unity2019.2.18f1
-- ForwardRendering (SRPではない)
+- ForwardRendering (not SRP)
 - AR Foundation preview.3 - 3.1.0
 - ARKit XR Plugin preview.2 - 3.1.0
 - Xcode 11.3.1
